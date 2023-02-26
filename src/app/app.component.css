@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.stack.imgur.com/SvWWN.png);
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.12);
+}
+
+div {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgba(124, 14, 14, 0.1);
+}
+div h1 {
+  color: #373737;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: 'Staatliches', cursive;
+}
