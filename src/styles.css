@@ -10,15 +10,5 @@ body {
 body {
   position: relative;
   background-color: rgb(70, 95, 117);
-}
-
-body::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  border-radius: 100%;
-  top: -50%;
-  left: 25%;
+  
 }

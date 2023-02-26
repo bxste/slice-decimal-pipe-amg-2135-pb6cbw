@@ -14,18 +14,24 @@
     />
   </head>
   <body>
-    <div>
-      <h1>
-        <p class="text">ANGULAR DATA PIPE</p>
+    <div class="slice">
+      <section class="main">
+        <h3 style="text-align: center">Slice Pipe</h3>
+        <p>Start index:- {{ Fruits | slice: 2 }}</p>
         <br />
-        {{ presentDate | date: 'longDate' }} &nbsp;&nbsp;|&nbsp;&nbsp;
-        {{ presentDate | date: 'M/dd/yyyy' }}
-
+        <p>Start and End index:- {{ Fruits | slice: 1:4 }}</p>
         <br />
-        {{ presentDate | date: 'EEEE' }}
+        <p>Negative index:- {{ Fruits | slice: -2 }}</p>
         <br />
-        {{ todayO$ | async | date: 'mediumTime' }} {{ presentDate | date: 'z' }}
-      </h1>
+        <p>Negative start and End index:- {{ Fruits | slice: -4:-2 }}</p>
+      </section>
+    </div>
+    <div class="decimal" style="text-align: center">
+      <h3>
+        Decimal Pipe
+        <p>{{ decimalNum1 | number }}</p>
+        <p>{{ decimalNum2 | number }}</p>
+      </h3>
     </div>
   </body>
 </html>
